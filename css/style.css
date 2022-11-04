@@ -211,7 +211,9 @@ footer {
   color: white;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background-color: rgb(0, 122, 204);
+  margin-left: 240px;
 }
 footer i {
   margin-left: 15px;
@@ -219,7 +221,23 @@ footer i {
 }
 footer a {
   color: white;
+  text-decoration: none;
 }
 footer a:hover {
   color: black;
+}
+
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  padding-right: 2rem;
+}
+
+.isDisabled:hover {
+  color: white;
+}
+
+.isDisabled p {
+  display: inline-block;
+  font-size: var(--ideFZ);
 }
