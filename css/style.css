@@ -50,7 +50,8 @@ main {
 
 .line-border {
   font-size: 0;
-  border: solid 4px rgb(40, 40, 40);
+  border: solid 3px rgb(40, 40, 40);
+  line-height: normal;
 }
 
 .line-border span {
@@ -144,6 +145,7 @@ main ::selection {
 
 .tab.active {
   background: rgb(30, 30, 30);
+  border-right: 3px solid rgb(45, 45, 45);
 }
 
 .tab i {
