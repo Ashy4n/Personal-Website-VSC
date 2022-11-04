@@ -1,0 +1,223 @@
+:root {
+  --ideFZ: 3rem;
+}
+
+@media (max-width: 1320px) {
+  :root {
+    --ideFZ: 3rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  :root {
+    --ideFZ: 2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  :root {
+    --ideFZ: 2.4vw;
+  }
+  .tab {
+    padding: 3rem;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Source Code Pro", monospace;
+  background: #000;
+}
+
+.container-main {
+  margin-top: 25vh;
+  background-color: rgb(30, 30, 30);
+}
+main {
+  /* height: 100vh; */
+  font-weight: bold;
+}
+
+.line-border {
+  font-size: 0;
+  border: solid 4px rgb(40, 40, 40);
+}
+
+.line-border span {
+  font-size: var(--ideFZ);
+}
+
+main ::selection {
+  background-color: rgba(38, 79, 120, 0.8);
+}
+
+.c-sel {
+  color: rgba(198, 198, 198);
+  font-size: var(--ideFZ);
+}
+.c-com {
+  color: rgb(94, 153, 85);
+  font-size: var(--ideFZ);
+}
+.c-tag {
+  color: rgb(128, 128, 128);
+  font-size: var(--ideFZ);
+}
+.c-line {
+  color: rgb(174, 175, 173);
+  font-size: var(--ideFZ);
+}
+.c-comp {
+  color: rgb(78, 201, 162);
+  font-size: var(--ideFZ);
+}
+.c-bracket {
+  color: rgb(255, 215, 0);
+  font-size: var(--ideFZ);
+}
+.c-prop {
+  color: rgb(156, 220, 254);
+  font-size: var(--ideFZ);
+}
+.c-eql {
+  color: rgb(212, 212, 212);
+  font-size: var(--ideFZ);
+  text-decoration: none;
+}
+.c-html {
+  color: rgb(86, 156, 214);
+  font-size: var(--ideFZ);
+}
+.c-css {
+  color: rgb(215, 186, 125);
+  font-size: var(--ideFZ);
+}
+.c-href {
+  color: rgb(206, 129, 74);
+  font-size: var(--ideFZ);
+}
+.c-url {
+  color: rgb(220, 220, 157);
+  font-size: var(--ideFZ);
+}
+.c-cbracket {
+  color: rgb(218, 112, 214);
+  font-size: var(--ideFZ);
+}
+
+/* Aside and window */
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--ideFZ);
+}
+.aside p {
+  color: rgb(133, 133, 120);
+}
+
+/* App head */
+
+.tab {
+  font-size: var(--ideFZ);
+  background: rgb(45, 45, 45);
+  border-right: 3px solid rgb(30, 30, 30);
+  color: rgb(150, 150, 150);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: calc(var(--ideFZ) / 2);
+  cursor: pointer;
+}
+
+.tab.active {
+  background: rgb(30, 30, 30);
+}
+
+.tab i {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  height: var(--ideFZ);
+}
+.fa-js {
+  color: rgb(255, 202, 40);
+}
+.fa-html5 {
+  color: rgb(228, 77, 38);
+}
+.fa-css3 {
+  color: rgb(66, 165, 245);
+}
+.cursor {
+  padding-left: 4px;
+}
+.cursor::after {
+  content: "";
+  left: 0;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-left: 4px rgb(174, 175, 173) solid;
+  animation: coursorBlink 1s infinite;
+}
+
+@keyframes coursorBlink {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: transparent;
+  }
+  51% {
+    border-color: rgb(174, 175, 173);
+  }
+  100% {
+    border-color: rgb(174, 175, 173);
+  }
+}
+
+#home {
+  position: relative;
+}
+#about {
+  position: relative;
+}
+#contact {
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  font-size: calc(var(--ideFZ) + 0.5rem);
+  width: 100%;
+  padding: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  background-color: rgb(0, 122, 204);
+}
+footer i {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+footer a {
+  color: white;
+}
+footer a:hover {
+  color: black;
+}
